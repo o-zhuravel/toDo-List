@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="wrapper">
+
+    <div class="tasks">
+
+        <div class="task-list">
+            <h2>Мої завдання</h2>
+            <h3></h3>
+            <div class="list"></div>
+        </div>
+        <div class="add-task">
+
+            <div class="add-task-btn">Нове завдання</div>
+            <div class="form">
+                <div class="punct"><label>Назва</label><input class="task-name" placeholder="Введіть назву"></div>
+                <div class="punct"><label>Дата</label><input class="date" type="date" value=""></div>
+
+                <div class="punct"><label>Час</label><input class="time" type="time" value=""></div>
+
+                <div class="punct"><label>Категорія</label><select class="category">
+                    <option></option>
+                    <option>Дім</option>
+                    <option>Робота</option>
+                    <option>Хобі</option>
+                    <option>Саморозвиток</option>
+                    <option>Спорт</option>
+                </select></div>
+
+
+                <div class="punct"><label>Приорітетність</label><select class="priority">
+                    <option></option>
+                    <option>Висока</option>
+                    <option>Середня</option>
+                    <option>Низька</option>
+                </select></div>
+
+
+                <div class="ok-btn">Додати</div>
+            </div>
+            <div class="sort-btn">Відсортувати</div>
+            <div class="sort-menu">
+                <p id="sort-completed">За статусом</p>
+                <p id="sort-priority">За приоритетністю</p>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

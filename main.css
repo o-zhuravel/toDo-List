@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Montserrat_Regular;
+    src: url(./Montserrat/static/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montserrat_Medium;
+    src: url(./Montserrat/static/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: Montserrat_Semibold;
+    src: url(./Montserrat/static/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat_Bold;
+    src: url(./Montserrat/static/Montserrat-Bold.ttf);
+}
+
+body {
+    background-color: rgb(47,64,120);
+    font-family: Montserrat_Regular;
+}
+
+.wrapper {
+    max-width: 1920px;
+    min-height: 82.8vh;
+    background-image: url("./image/bg.jpg");
+    background-repeat: no-repeat;
+    padding-top: 8%;
+    color: rgb(47,64,120);
+}
+
+            /*TASKS*/
+
+.tasks {
+    width: 80%;
+    min-height: 60vh;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.tasks .task-list {
+    width: 75%;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.tasks .task-list h2 {
+    font-family: Montserrat_Semibold;
+    font-size: 30px;
+}
+
+.tasks .task-list h3 {
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+    text-align: right;
+}
+
+              /*TASK*/
+
+.tasks .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 15px 0;
+    font-family: Montserrat_Medium;
+}
+
+.tasks .task .checkbox {
+    width: 15px;
+    height: 15px;
+}
+
+.tasks .task .text {
+    width: 30%;
+}
+
+.tasks .task .date {
+    width: 100px;
+}
+
+.tasks .task .time {
+    width: 50px;
+}
+
+.tasks .task .priority {
+    width: 100px;
+    text-align: center;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.tasks .task .high-priority {
+    background-color: #f87979;
+}
+
+.tasks .task .medium-priority {
+    background-color: #f5ca74;
+}
+
+.tasks .task .low-priority {
+    background-color: #fcfc95;
+}
+
+.tasks .task .category {
+    width: 120px;
+}
+
+.tasks .task .remove-btn {
+    width: 100px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 5px 3px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+              /*ADD TASK*/
+
+.tasks .add-task {
+    width: 25%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.tasks .add-task .add-task-btn {
+    background-color: rgb(132,214,228);
+    font-family: Montserrat_Semibold;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.tasks .add-task .add-task-btn:hover {
+    background-color: rgb(245,243,169);
+}
+
+.tasks .form {
+    display: none;
+    margin: 15px 0;
+}
+
+.tasks .form .punct {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.tasks .form input {
+    width: 50%;
+    height: 26px;
+    color: rgb(47,64,120);
+    border: 1px solid rgb(210,221,225);
+    font-family: Montserrat_Regular;
+}
+
+.tasks .form select {
+    width: 51%;
+    height: 26px;
+    border: 1px solid rgb(210,221,225);
+    font-family: Montserrat_Regular;
+}
+
+.tasks .form .ok-btn {
+    width: 30%;
+    margin-left: auto;
+    background-color: rgb(245,243,169);
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px 0;
+    font-family: Montserrat_Semibold;
+    border-radius: 10px;
+}
+
+.tasks .form .ok-btn:hover {
+    background-color: rgb(132,214,228);
+}
+             /*SORT*/
+
+.add-task .sort-btn {
+    width: 100%;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 400px;
+}
+
+.add-task .sort-menu {
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 430px;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.62);
+}
+
+             /*COMPLETED*/
+
+.completed {
+    background-color: rgba(210, 221, 225, 0.9);
+}
+
