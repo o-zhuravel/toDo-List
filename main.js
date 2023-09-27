@@ -213,6 +213,7 @@ function showSortMenu () {
 }
 
 function sort (e) {
+    sortMenu.style.display = "none";
     console.log(e.target.id);
     switch (e.target.id) {
         case "sort-completed":
